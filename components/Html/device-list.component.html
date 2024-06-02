@@ -1,0 +1,11 @@
+<!-- device-list.component.html -->
+
+<div *ngFor="let device of devices" class="card" (click)="onCardClick(device.id)">
+    <div class="card-header">
+      {{ device.name }}
+    </div>
+    <div class="card-body">
+      <p>Number of Sensors: {{ device.numSensors }}</p>
+    </div>
+  </div>
+  
